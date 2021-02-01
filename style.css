@@ -416,7 +416,7 @@ li {
 
 p {
   line-height: 1.8;
-  color: #5d5e8d;
+  color: #fff;
   font-size: 16px;
   font-weight: 400;
 }
@@ -4699,7 +4699,7 @@ modal styles */
 
 .button {
   border: none;
-  outline: 0;
+  /* outline: 0; */
   display: inline-block;
   padding: 8px;
   color: white;
@@ -4709,6 +4709,10 @@ modal styles */
   cursor: pointer;
   width: 100%;
   shape-outside: circle();
+  outline: none;
+}
+.button:focus{
+  outline: none;
 }
 
 .button:hover {
@@ -4775,7 +4779,7 @@ h1 {
   top:50%;
   left:50%;
   transform:translate(-50%,-50%) scale(0);
-  background:#fff;
+  background:#151515;
   width:80%;
   height:60%;
   z-index:2;
@@ -4783,7 +4787,7 @@ h1 {
   padding:20px;
   box-sizing:border-box;
   font-family:"Helvetica",sans-serif;
-  overflow: scroll;
+  overflow-y: scroll;
   color: #FFFFFF;
   border-radius: 10px;
 }
