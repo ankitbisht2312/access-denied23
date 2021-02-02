@@ -15,6 +15,9 @@
     .modal-content{
       width: 1000px;
     }
+    .modal-backdrop {
+  z-index: -1;
+}
   </style>
 </head>
 <body>
@@ -154,7 +157,7 @@
             <h3 class="wow fadeInUp" data-wow-delay="300ms">About IETE</h3>
             <p class="wow fadeInUp" data-wow-delay="300ms" style="text-align: justify;">The Institution of Electronics and Telecommunication Engineers (IETE) is India's leading recognized professional society devoted to the advancement of Science and Technology of Electronics,
               Telecommunication and IT. Government of India has recognized IETE as a Scientific and Industrial Research Organization (SIRO) and also notified as an educational Institution of national eminence. The objectives of IETE focus on
-              advancing electro-technology. The IETE conducts and partners technical meetings, conferences, symposia, and exhibitions all over India, publishes technical journals and provides continuing education as well as career advancement
+              advancing electro-technology. IETE conducts and partners technical meetings, conferences, symposia, and exhibitions all over India, publishes technical journals and provides continuing education as well as career advancement
               opportunities to its members.</p>
 
           </div>
@@ -175,7 +178,7 @@
         <div class="col-12 col-md-6">
           <div class="about-content-text mb-80">
             <h3 href="#" class="footer-logo" style="color:white;">About Access<span style="color:red"> Denied</span> </h3>
-            <p class="wow fadeInUp" data-wow-delay="300ms" style="text-align: justify;">Access <span style="color:red"> Denied</span> is a 36-hour hackathon organized by IETE-ISF for innovators across the country. It is an great opportunity to put your technical skills to use. Apply your textbook knowledge to real life ideas and stand a chance to win exclusive goodies, schwags, certificates and cash prizes. Mark your calendars for 19th to 21st March 2021.</p>
+            <p class="wow fadeInUp" data-wow-delay="300ms" style="text-align: justify;">Access <span style="color:red"> Denied</span> is a 36-hour hackathon organized by IETE-ISF for innovators across the country. It is a great opportunity to put your technical skills to use. Apply your textbook knowledge to real life ideas and stand a chance to win exclusive goodies, schwags, certificates and cash prizes. Mark your calendars for 19th to 21st March 2021.</p>
             
           </div>
         </div>
@@ -1243,7 +1246,7 @@
           <div class="container">
             <h2 style="text-align: center;">Anuj Garg</h2>
             
-            <p style="text-align: center;">He is an open-source enthusiast. He is part of the JBoss Community for 5 years wearing different hats like GSoC and GCI admin etc to engage more and more college students into the JBoss ecosystem and 👥Open Source Community.</p><br><br>
+            <p style="text-align: center;">He is an open-source enthusiast. He is part of the JBoss Community for 5 years wearing different hats like GSoC and GCI admin etc to engage more and more college students into the JBoss ecosystem and Open source community.</p><br><br><br>
             <p><button class="button" onclick="window.location.href='https://www.linkedin.com/in/keenwarrior/' " >LinkedIn<a target="_blank" href="https://linkedIn.com/in/briangolod"></a> </button></p>
           </div>
             </div>
@@ -1260,7 +1263,7 @@
           <div class="container">
             <h2 style="text-align: center;">Logan Kilpatrick</h2>
             
-            <p style="text-align: center;">He's a graduate from Harvard University. He has the passion for helping people improve their lives through the help of technology. He is software engineer at Apple by day and the current community manager for the Julia language. He has also started writing a book: Introduction to Programing with Julia. </p><br><br>
+            <p style="text-align: center;">He's a graduate from Harvard University. He has the passion for helping people improve their lives through the help of technology. He is software engineer at Apple by day and the current community manager for the Julia language. He has also started writing a book: Introduction to Programing with Julia. </p>
             <p><button class="button" onclick="window.location.href='https://linkedin.com/in/logankilpatrick';" >LinkedIn<a target="_blank" href="https://linkedin.com/in/logankilpatrick"></a> </button></p>
           </div>
             </div>
@@ -1276,7 +1279,7 @@
           <div class="container">
             <h2 style="text-align: center;">Ganga Chaturvedi</h2>
             
-            <p style="text-align: center;">Ganga is the Co-founder for Code-for-Cause and also the Co-founder of Coding Junior. She is the outreach advocate of JBoss Community. She has also been a Google Summer of Code Mentor.</p><br><br>
+            <p style="text-align: center;">Ganga is the Co-founder for Code-for-Cause and also the Co-founder of Coding Junior. She is the outreach advocate of JBoss Community. She has also been a Google Summer of Code Mentor.</p><br><br><br>
             <p><button class="button" onclick="window.location.href='https://www.linkedin.com/in/gangachatrvedi/?originalSubdomain=in';" >LinkedIn<a target="_blank" href="https://www.linkedin.com/in/gangachatrvedi/?originalSubdomain=in"></a> </button></p>
           </div>
             </div>
@@ -1346,7 +1349,7 @@
           <div class="container">
             <h2 style="text-align: center;">Neha Benny Mathews</h2>
             
-            <p style="text-align: center;">She is currently pursuing my Masters in Industrial & Systems Engineering and working part-time as an industrial engineer in the healthcare industry. Previously, when she was studying at VIT, she worked Ecolab and Amazon.</p><br><br><br>
+            <p style="text-align: center;">She is currently pursuing her Masters in Industrial & Systems Engineering and working part-time as an industrial engineer in the healthcare industry. Previously, when she was studying at VIT, she worked Ecolab and Amazon.</p><br><br><br>
             <p><button class="button" onclick="window.location.href='https://www.linkedin.com/in/neha-benny-m/';" >LinkedIn<a target="_blank" href="https://www.linkedin.com/in/neha-benny-m/"></a> </button></p>
           </div>
             </div>
@@ -1811,17 +1814,89 @@ Please email iete@vit.ac.in if you have any questions! We'd love to hear from yo
     </div>
   </section>
   <!-- Our Ticket Pricing Table Area End -->
-<section id="codeofconduct" class="our-sponsor-client-areaa section-padding-100">
+<section id="codeofconduct" class="our-sponsor-client-areaa section-padding-100" id="sponsors">
     <div  class="section-heading-2 text-center  fadeInUp" data-wow-delay="300ms">
       <h4>Code of Conduct</h4>
     </div>
     <div class="text-center">
-      <button type="submit" class="btn confer-btn" onclick="togglePopup()" style="color: white; text-align:center; cursor:pointer; font-size: 20px;" >Click to View </button>
+      <button type="button" id="modalBtnClick" data-toggle="modal" data-target="#myModal" class="btn confer-btn"  style="color: white; text-align:center; cursor:pointer; font-size: 20px;" >Click to View </button>
     </div>
   
     
   </section>
-
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" >
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="background-color: black; color: white;">
+        <div class="modal-header" style="background-color: black;" >
+          
+          <br><br>
+          
+        </div>
+        <div class="modal-body" style="background-color: black; color: white;" >
+          <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+          <p style="text-align: justify; color: white;"><br> Participants are requested to follow the Code of Conduct. If any participant
+              violates the above rules, strict action will be taken against them by the
+              hackathon organizers.<br>
+              Hackathon is a community event where we welcome attendees from all
+              backgrounds. This event is about increasing the overall amount of learning,
+              partnership, and engagement in the developer community. We value the
+              participation of each member and want everyone involved to have a joyful and
+              fulfilling experience. Accordingly, all staff and participants are expected to show
+              respect and courtesy to others throughout the event. We believe that every
+              single person has the right to hack in a respectful and safe environment.<br>
+              <br><span class="topic" style="color:#F147AF;">  No Plagiarism or Re-use of Past Work: </span><br>
+              We encourage you to submit projects only prepared in the duration of the
+              hackathon.<br>
+              
+              However, if you decide to submit projects consisting of re-used code, or re-
+              submit a project that you have already submitted previously to any other
+              
+              hackathon, you are to disclose such previous use and its extent with the
+              submission.<br>
+              If upon inspection, it is found that the project has re-used code that was not
+              disclosed with the submission, the organizer may ask the participant to point
+              out similarities and differences between the old and new work, and/or disqualify
+              the submission from winning awards automatically.<br>
+              <br><span class="topic" style="color:#F147AF;">  No Harassment: </span><br>
+              Harassment includes offensive verbal comments related to gender, gender
+              identity and expression, age, sexual orientation, disability, physical appearance,
+              body size, race, ethnicity, nationality, religion or political views, sexual images in
+              public spaces, deliberate intimidation, stalking, following, photography or
+              audio/video recording against reasonable consent, sustained disruption of talks
+              or other events, inappropriate physical contact, and unwelcome sexual
+              attention.<br>
+              Sponsors and partners are also subject to the anti-harassment policy. In
+              particular, sponsors should not use sexualised images, activities, or other
+              material. Sponsor representatives (including volunteers) should not use
+              sexualised clothing/uniforms/costumes, or otherwise create a sexualised
+              environment.<br>
+              <br><span class="topic" style="color:#F147AF;">  Report: </span><br>
+              Be kind and thoughtful to others. Do not insult or put down other participants.
+              Any sort of harassment or abuse is not encouraged. If you feel that you are in a
+              situation that makes you feel uncomfortable at the staff or at the fellow
+              participants, please report it to the organizers immediately.<br>
+              If you are being harassed, notice that someone else is being harassed, or have
+              any other concerns, please contact a member of hackathon staff immediately.<br>
+              <br><span class="topic" style="color:#F147AF;">  Consequences of Violations: </span><br>
+              Participants asked to stop any harassing behaviour are expected to comply
+              immediately.<br>
+              If a participant engages in harassing behaviour, the hackathon organisers may
+              take any action they deem appropriate. This includes warning the offender,
+              expulsion from the hackathon, or reporting their behaviour to local law
+              enforcement.<br></p>
+        </div>
+        <div class="modal-footer" style="background-color: black;">
+          <button type="button" class="btn btn-default" data-dismiss="modal" style="color: white;">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  
+  </div>
   <!-- ================================map end============================================= -->
 
   <!-- Contact Area Start -->
