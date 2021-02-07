@@ -19,11 +19,6 @@
   z-index: -1;
 }
   </style>
-</head>
-<body>
-
-  <!-- Preloader -->
-  
   <script type='text/javascript'>
 function get() {
   const logo = document.getElementById('logo').querySelectorAll('path');
@@ -34,6 +29,12 @@ function get() {
 }
 
 </script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  
+  <div id="preloader" onload="get()">
   <div>
         <img id="logoImage" src="https://ietevit.com/accessdenied/img/accessLogo.png">
     </div>
@@ -94,6 +95,7 @@ function get() {
     <path class="cls-2" d="M371,321.36h-2.5V319.2h4.89V338H371Z" transform="translate(-150.61 -318.49)" />
 </svg>
     </div>
+  </div>
   <!-- /Preloader -->
 
   <div id="progressbar"></div>
