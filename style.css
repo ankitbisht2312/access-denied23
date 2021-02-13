@@ -182,12 +182,33 @@ $star: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32%
 	.seconds {
 		display: inline-block;
 		padding: 15px;
-		width: 70px;
+		width: 65px;
 		border-radius: 5px;
 		font-size: 12px;
 	}
 }
 
+@media  (max-width: 300px) {
+	.numbers {
+		font-family: $big;
+		color: #fff;
+		font-size: 1.5em;
+	}
+	.timetext {
+		color: #fff;
+		font-size: 0.4em;
+	}
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		display: inline-block;
+		padding: 15px;
+		width: 55px;
+		border-radius: 5px;
+		font-size: 10px;
+	}
+}
 .white {
 	position: absolute;
 	background: #f6f4f3;
