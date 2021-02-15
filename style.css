@@ -5124,3 +5124,32 @@ animation: line-anim-2 0.5s ease forwards 1.4s;
         opacity: 1;
     }
 }
+@media (min-width: 437px) and (max-width: 454px) {
+
+   #camp{
+   	width: 240px;
+   	margin-left: 40%;
+   	margin-right: 0px;
+  display:block;
+   }
+}
+
+@media (min-width: 454px) and (max-width: 475px) {
+
+   #camp{
+   	width: 240px;
+   	margin-left: 42%;
+   	margin-right: 0px;
+  display:block;
+   }
+}
+
+@media (min-width: 475px) and (max-width: 480px) {
+
+   #camp{
+   	width: 240px;
+   	margin-left: 45%;
+   	margin-right: 0px;
+  display:block;
+   }
+}
