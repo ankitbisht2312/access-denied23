@@ -772,8 +772,8 @@ input:requ#EF2F3C {
 	top: 0;
 	left: 0;
 	background: #df42b1;
-	background-image: -webkit-linear-gradient(120deg, #505add 0%, #000000 100%);
-	background-image: -ms-linear-gradient(120deg, #505add 0%, #000000 100%);
+	background-image: -webkit-linear-gradient(120deg, #000000 0%, #000000 100%);
+	background-image: -ms-linear-gradient(120deg, #000000 0%, #000000 100%);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
