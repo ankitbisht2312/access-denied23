@@ -992,7 +992,7 @@ input:requ#EF2F3C {
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
-	color: #ffffff;
+	color: #ffffff !important;
 	border-radius: 10px;
 	-webkit-transition-duration: 500ms;
 	-o-transition-duration: 500ms;
@@ -1021,7 +1021,7 @@ input:requ#EF2F3C {
 	z-index: -2;
 }
 
-.confer-btn:focus,
+
 .confer-btn:hover {
 	font-weight: 500;
 	background-color: steelblue;
@@ -1030,13 +1030,13 @@ input:requ#EF2F3C {
 	box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
 }
 
-.confer-btn:focus i,
+
 .confer-btn:hover i {
 	-webkit-animation: buttonIcon 1s ease-in infinite;
 	animation: buttonIcon 1s ease-in infinite;
 }
 
-.confer-btn:focus::before,
+
 .confer-btn:hover::before {
 	left: 110%;
 }
