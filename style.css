@@ -26,6 +26,19 @@ $star: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32%
 	align-items: center;
 }
 
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
 
 .days,
 .hours,
@@ -360,9 +373,10 @@ footer {
 	margin: 0;
 	padding: 0;
 }
-html {
+html{
 	scroll-behavior: smooth;
 }
+
 body {
 	margin: 0;
 	padding: 0;
@@ -371,6 +385,7 @@ body {
 	font-size: 16px;
 	position: relative;
 	z-index: auto;
+	
 }
 
 h1,
