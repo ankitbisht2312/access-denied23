@@ -61,6 +61,25 @@ function get() {
     justify-content: center;
     box-sizing: border-box;
 }
+.banner img {
+    background-color: #fff;
+    width: 8rem !important;
+    height: 8rem !important;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 30%);
+    border-radius: 50%;
+    transform: translateY(50%);
+    transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.banner img:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background-color: rgba(229, 229, 229, 0.9);
+}
+
 .card-prize .menu {
     width: 100%;
     height: 5.5rem;
@@ -76,14 +95,14 @@ function get() {
     text-align: center;
     padding: 0 2rem 0.5rem;
     margin: 0;
-    color: black;
+    color: white;
     font-size: calc(20px + 2 * ((100vw - 576px) / 1024));
 }
 .card-prize .desc {
     text-align: justify;
     padding: 0 2rem 2.5rem;
     order: 100;
-    color: #000;
+    color: white;
     font-weight: 470;
     font-size: calc(12px + 2 * ((100vw - 576px) / 1024));
 }
@@ -106,29 +125,18 @@ function get() {
 .card-prize .menu .opener span:nth-child(3) {
     top: 1.65rem;
 }
-.prizes_svg {
-    background-color: #fff;
-    width: 8rem;
-    height: 8rem;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 30%);
-    border-radius: 50%;
-    transform: translateY(50%);
-    transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
-}
-.prizes_svg:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100%;
-    background-color: rgba(229, 229, 229, 0.9);
-}
+
 .card-prize h4 sup {
-    color: black;
+    color: white;
 }
 </style>
 
+<style>
+
+  .desc ul li{
+    list-style-type:circle;
+  }
+</style>
 
 </head>
 <body>
@@ -1376,14 +1384,8 @@ function get() {
       </div>
       
     </div>
-  
-  
   <!-- Our Schedule Area Start -->
-
   <!-- Our Schedule Area End -->
-
-  
-  
   <section  class="our-ticket-pricing-table-area bg-img bg-gradient-overlay section-padding-100-0 jarallax" style="background-image: url(img/bg-img/14.jpg);  margin-bottom: 0; ">
    
    <div class="container">
@@ -1413,7 +1415,6 @@ function get() {
               <i class="zmdi zmdi-quote"></i>
             </div>
           </div>
-  
           <div class="single-client-content">
             <!-- Single client Text -->
             <div class="single-client-text">
@@ -1430,7 +1431,6 @@ function get() {
               <i class="zmdi zmdi-quote"></i>
             </div>
           </div>
-          
           <div class="single-client-content">
             <!-- Single client Text -->
             <div class="single-client-text ">
@@ -1446,7 +1446,6 @@ function get() {
               <i class="zmdi zmdi-quote"></i>
             </div>
           </div>
-
           <div class="single-client-content">
             <!-- Single client Text -->
             <div class="single-client-text ">
@@ -1479,10 +1478,6 @@ function get() {
               <i class="zmdi zmdi-quote"></i>
             </div>
           </div>
-         
-
-
-          
           <div class="single-client-content">
             <!-- Single client Text -->
             <div class="single-client-text ">
@@ -1549,7 +1544,6 @@ function get() {
               <i class="zmdi zmdi-quote"></i>
             </div>
           </div>
-  
            <div class="single-client-content">
             <!-- Single client Text -->
             <div class="single-client-text">
@@ -1567,7 +1561,6 @@ function get() {
               <i class="zmdi zmdi-quote"></i>
             </div>
           </div>
-          
           <div class="single-client-content">
             <!-- Single client Text -->
             <div class="single-client-text">
@@ -1600,7 +1593,6 @@ function get() {
               <i class="zmdi zmdi-quote"></i>
             </div>
           </div>
-          
             <div class="single-client-content">
             <!-- Single client Text -->
             <div class="single-client-text">
@@ -1617,7 +1609,6 @@ function get() {
               <i class="zmdi zmdi-quote"></i>
             </div>
           </div>
-          
           <div class="single-client-content">
             <!-- Single client Text -->
             <div class="single-client-text">
@@ -1634,7 +1625,6 @@ function get() {
               <i class="zmdi zmdi-quote"></i>
             </div>
           </div>
-  
         </div>
       </div>
     </div>
@@ -1650,938 +1640,262 @@ function get() {
 		style="padding-top: 40px; background-color: #273059;">
 		<div class="demo-filter" style="display: none;"></div>
 		<div class="page-container" style="padding: 0 5%">
-			<div class="demo-heading text-center" style="padding-top: 0;">
-				<h2 class="title" style="color: #ffffff; padding-bottom: 40px">Prizes</h2>
-			</div>
-			<div class="prizes booking">
-				<li class="booking-card">
-					<div class="card-prize" style="background-color:#C9B037;">
-						<div class="banner" >
-							<svg class="prizes_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-								style="position: relative; margin:0;" width="500" height="500" viewBox="0 0 500 500">
-								<image id="_2954" data-name="2954" width="500" height="500"
-									xlink:href="https://image.freepik.com/free-vector/character-illustration-people-holding-voucher-icons_53876-64624.jpg" />
-							</svg>
-
-						</div>
+			<div style="padding-top: 40px;" class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
+         
+          <h4>Prizes</h4>
+        </div>
+       <div class="col-12">
+      <div class="our-client-area mt-100 wow fadeInUp" data-wow-delay="300ms">
+        <!-- client Slider -->
+        <div class="client-area owl-carousel">
+          <!-- Single client Slider -->
+          <li class="booking-card">
+					<div class="card-prize" style="background-color:#1A1A1A;">
+						<div class="banner">
+              <img src="./img/prizes/first.JPEG" alt="">
+            </div>
 						<div class="menu">
 							<div class="opener"><span></span><span></span><span></span></div>
 						</div>
-						<h4 class="name">Overall 1<sup>st</sup></h4>
-
-						<div class="desc">The team which builds the best hack at Hack Off wins :
-							<ul style="color: #000;">
-								<li style="color: #000; padding: 0;">INR 50000 cash prize</li>
-								<li style="color: #000; padding: 0;">Hack Off branded merchandise</li>
-								<li style="color: #000; padding: 0;">3 months QuikNode launch plan</li>
-								<li style="color: #000; padding: 0;">Egghead.io codes valid for 1 year</li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li class="booking-card">
-					<div class="card-prize" style="background-color:silver;">
-						<div class="banner" style="background-image: url(assets/img/tracks/2nd.png);">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-								style="position: relative; margin:0;" width="500" height="500" viewBox="0 0 500 500">
-								<image id="_2954" data-name="2954" width="500" height="500"
-									xlink:href="assets/img/tracks/2954.png" />
-							</svg>
-						</div>
-						<div class="menu">
-							<div class="opener"><span></span><span></span><span></span></div>
-						</div>
-						<h4 class="name">Overall 2<sup>nd</sup></h4>
-						<div class="desc">The team which builds the 2nd best hack at Hack Off wins :
-							<ul style="color: #000;">
-								<li style="color: #000; padding: 0;">INR 25000 cash prize</li>
-								<li style="color: #000; padding: 0;">Hack Off branded merchandise</li>
-								<li style="color: #000; padding: 0;">3 months QuikNode launch plan</li>
-								<li style="color: #000; padding: 0;">Egghead.io codes valid for 1 year</li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li class="booking-card">
-					<div class="card-prize" style="background-color: #AD8A56;">
-						<div class="banner" style="background-image: url(assets/img/tracks/3rd.png);">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-								style="position: relative; margin:0;" width="500" height="500" viewBox="0 0 500 500">
-								<image id="_2954" data-name="2954" width="500" height="500"
-									xlink:href="assets/img/tracks/2954.png" />
-							</svg>
-						</div>
-						<div class="menu">
-							<div class="opener"><span></span><span></span><span></span></div>
-						</div>
-						<h4 class="name">Overall 3<sup>rd</sup></h4>
-						<div class="desc">The team which builds the 3rd best hack at Hack Off wins :
-							<ul style="color: #000;">
-								<li style="color: #000; padding: 0;">INR 10000 cash prize</li>
-								<li style="color: #000; padding: 0;">Hack Off branded merchandise</li>
-								<li style="color: #000; padding: 0;">Balsamiq Cloud credits</li>
-								<li style="color: #000; padding: 0;">Axure licenses</li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/tracks/ai.png);">
-
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-								style="position: relative; margin:0;" width="300" height="300" viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.a {
-											clip-path: url(#c);
-										}
-
-										.ai {
-											fill: url(#ai);
-										}
-									</style>
-									<pattern id="ai" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"
-										viewBox="0 0 654 628">
-										<image width="654" height="628" xlink:href="assets/img/tracks/science.png" />
-									</pattern>
-									<clipPath id="c">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="b" class="a">
-									<rect class="ai" width="300" height="286.422" transform="translate(0 7)" />
-								</g>
-							</svg>
-						</div>
-						<div class="menu">
-							<div class="opener"><span></span><span></span><span></span></div>
-						</div>
-						<h4 class="name"> Best AI Hack </h4>
-
-						<div class="desc">The team which builds the best hack in the AI category wins :
-							<ul style="color: #000;">
-								<li style="color: #000; padding: 0;">INR 5000 cash prize</li>
-								<li style="color: #000; padding: 0;">Hack Off branded Merchandise</li>
-								<li style="color: #000; padding: 0;">Wolfram One Licenses</li>
-								
-								<li style="color: #000; padding: 0;">Cloudspoilt Credits</li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/tracks/iot_thumb.png);">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-								style="position: relative; margin:0;" width="300" height="300" viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.a {
-											clip-path: url(#c);
-										}
-
-										.i {
-											fill: url(#iot);
-										}
-									</style>
-									<pattern id="iot" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"
-										viewBox="0 0 654 628">
-										<image width="654" height="628" xlink:href="assets/img/tracks/iot.png" />
-									</pattern>
-									<clipPath id="c">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="b" class="a">
-									<rect class="i" width="300" height="286.422" transform="translate(0 7)" />
-								</g>
-							</svg>
-						</div>
-						<div class="menu">
-							<div class="opener"><span></span><span></span><span></span></div>
-						</div>
-						<h4 class="name"> Best IOT Hack </h4>
-
-						<div class="desc">The team which builds the best hack in the IOT category wins :
-							<ul style="color: #000;">
-								<li style="color: #000; padding: 0;">INR 5000 cash prize</li>
-								<li style="color: #000; padding: 0;">Hack Off branded Merchandise</li>
-								<li style="color: #000; padding: 0;">Wolfram One Licenses</li>
-								
-								<li style="color: #000; padding: 0;">Cloudspoilt Credits</li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/tracks/robot_thumb.png);">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-								style="position: relative; margin:0;" width="300" height="300" viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.a {
-											clip-path: url(#c);
-										}
-
-										.r {
-											fill: url(#ro);
-										}
-									</style>
-									<pattern id="ro" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"
-										viewBox="0 0 654 628">
-										<image width="654" height="628" xlink:href="assets/img/tracks/robotics.png" />
-									</pattern>
-									<clipPath id="c">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="b" class="a">
-									<rect class="r" width="300" height="286.422" transform="translate(0 7)" />
-								</g>
-							</svg>
-
-						</div>
-						<div class="menu">
-							<div class="opener"><span></span><span></span><span></span></div>
-						</div>
-						<h4 class="name">Best Robotics Hack </h4>
-
-						<div class="desc">The team which builds the best hack in the Robotics category wins :
-							<ul style="color: #000;">
-								<li style="color: #000; padding: 0;">INR 5000 cash prize</li>
-								<li style="color: #000; padding: 0;">Hack Off branded Merchandise</li>
-								<li style="color: #000; padding: 0;">Wolfram One Licenses</li>
-								
-								<li style="color: #000; padding: 0;">Cloudspoilt Credits</li>
+						<h4 class="name">1<sup>st</sup> Prize</h4>
+						<div class="desc">
+							<ul style="color: white;">
+								<li style="color: white; padding: 0;">INR 20000 cash prize</li>
+								<li style="color: white; padding: 0;">Merchandise and Schwag Pack</li>
+								<li style="color: white; padding: 0;"> Momento </li>
+								<li style="color: white; padding: 0;">30% off Premium counselling from Yocket</li>
+								<li style="color: white; padding: 0;"> 90% off on all online courses of Coding Blocks</li>
+								<li style="color: white; padding: 0;"> Paid Internship opportunity at GUVI </li>
+								<li style="color: white; padding: 0;"> Free workshop from DHD </li>
+								<li style="color: white; padding: 0;"> Clerky company lifetime package </li>
+								<li style="color: white; padding: 0;"> Azure credits </li>
 							</ul>
 						</div>
 					</div>
 				</li>
 
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/tracks/block.png);">
-
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-								style="position: relative; margin:0;" width="300" height="300" viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.a {
-											clip-path: url(#c);
-										}
-
-										.bc {
-											fill: url(#bc);
-										}
-									</style>
-									<pattern id="bc" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"
-										viewBox="0 0 654 628">
-										<image width="654" height="628" xlink:href="assets/img/tracks/data.png" />
-									</pattern>
-									<clipPath id="c">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="b" class="a">
-									<rect class="bc" width="300" height="286.422" transform="translate(0 7)" />
-								</g>
-							</svg>
-						</div>
+        <li class="booking-card">
+					<div class="card-prize" style="background-color:#1A1A1A;">
+						<div class="banner">
+              <img src="./img/prizes/first.JPEG" alt="">
+            </div>
 						<div class="menu">
 							<div class="opener"><span></span><span></span><span></span></div>
 						</div>
-						<h4 class="name"> Best Blockchain Hack </h4>
-
-						<div class="desc">The team which builds the best hack in the Blockchain category wins :
-							<ul style="color: #000;">
-								<li style="color: #000; padding: 0;">INR 5000 cash prize</li>
-								<li style="color: #000; padding: 0;">Hack Off branded Merchandise</li>
-								<li style="color: #000; padding: 0;">Wolfram One Licenses</li>
-								
-								<li style="color: #000; padding: 0;">Cloudspoilt Credits</li>
+						<h4 class="name">2<sup>nd</sup> Prize</h4>
+						<div class="desc">
+							<ul style="color: white;">
+								<li style="color: white; padding: 0;">INR 15000 cash prize</li>
+								<li style="color: white; padding: 0;">Merchandise and Schwag Pack</li>
+								<li style="color: white; padding: 0;"> Momento </li>
+								<li style="color: white; padding: 0;">30% off Premium counselling from Yocket</li>
+								<li style="color: white; padding: 0;"> 90% off on all online courses of Coding Blocks</li>
+								<li style="color: white; padding: 0;"> Paid Internship opportunity at GUVI </li>
+								<li style="color: white; padding: 0;"> Promo Code from DHD </li>
+								<li style="color: white; padding: 0;"> Azure credits </li>
 							</ul>
 						</div>
 					</div>
 				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/tracks/ar_thumb.png);">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-								style="position: relative; margin:0;" width="300" height="300" viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.a {
-											clip-path: url(#c);
-										}
 
-										.v {
-											fill: url(#vr);
-										}
-									</style>
-									<pattern id="vr" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"
-										viewBox="0 0 654 628">
-										<image width="654" height="628" xlink:href="assets/img/tracks/vr.png" />
-									</pattern>
-									<clipPath id="c">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="b" class="a">
-									<rect class="v" width="300" height="286.422" transform="translate(0 7)" />
-								</g>
-							</svg>
-						</div>
+        <li class="booking-card">
+					<div class="card-prize" style="background-color:#1A1A1A;">
+						<div class="banner">
+              <img src="./img/prizes/first.JPEG" alt="">
+            </div>
 						<div class="menu">
 							<div class="opener"><span></span><span></span><span></span></div>
 						</div>
-						<h4 class="name">Best AR Hack </h4>
+						<h4 class="name">3<sup>rd</sup> Prize</h4>
+						<div class="desc">
+							<ul style="color: white;">
+								<li style="color: white; padding: 0;">INR 10000 cash prize</li>
+								<li style="color: white; padding: 0;">Merchandise and Schwag Pack</li>
+								<li style="color: white; padding: 0;"> Momento </li>
+								<li style="color: white; padding: 0;">30% off Premium counselling from Yocket</li>
+								<li style="color: white; padding: 0;"> 90% off on all online courses of Coding Blocks</li>
+								<li style="color: white; padding: 0;"> Paid Internship opportunity at GUVI </li>
+								<li style="color: white; padding: 0;"> Azure credits </li>
+								<li style="color: white; padding: 0;"> 20 USD Linode credits </li>
 
-						<div class="desc">The team which builds the best hack in the AR category wins :
-							<ul style="color: #000;">
-								<li style="color: #000; padding: 0;">INR 5000 cash prize</li>
-								<li style="color: #000; padding: 0;">Hack Off branded Merchandise</li>
-								<li style="color: #000; padding: 0;">Wolfram One Licenses</li>
-								
-								<li style="color: #000; padding: 0;">Cloudspoilt Credits</li>
 							</ul>
 						</div>
 					</div>
 				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/3457997.jpg);">
 
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-								style="position: relative; margin:0;" width="300" height="300" viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.a {
-											clip-path: url(#c);
-										}
-
-										.b {
-											fill: url(#io);
-										}
-									</style>
-									<pattern id="io" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"
-										viewBox="0 0 654 628">
-										<image width="654" height="628"
-											xlink:href="assets/img/tracks/openinovation.png" />
-									</pattern>
-									<clipPath id="c">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="b" class="a">
-									<rect class="b" width="300" height="286.422" transform="translate(0 7)" />
-								</g>
-							</svg>
-
-						</div>
+         <li class="booking-card">
+					<div class="card-prize" style="background-color:#1A1A1A;">
+						<div class="banner">
+              <img src="./img/prizes/first.JPEG" alt="">
+            </div>
 						<div class="menu">
 							<div class="opener"><span></span><span></span><span></span></div>
 						</div>
-						<h4 class="name">Best Open Innovation</h4>
-
-						<div class="desc">The team which builds the best hack in the Open Innovation category wins :
-							<ul style="color: #000;">
-								<li style="color: #000; padding: 0;">INR 5000 cash prize</li>
-								<li style="color: #000; padding: 0;">Hack Off branded Merchandise</li>
-								<li style="color: #000; padding: 0;">Wolfram One Licenses</li>
-								
-								<li style="color: #000; padding: 0;">Cloudspoilt Credits</li>
+						<h4 class="name"> HealthTech </h4>
+						<div class="desc">
+							<ul style="color: white;">
+								<li style="color: white; padding: 0;">INR 3000 cash prize</li>
+								<li style="color: white; padding: 0;">Amazon SDE test service from Geeks For Geeks</li>
+								<li style="color: white; padding: 0;"> One complimentry paper book from Rosenfield </li>
+								<li style="color: white; padding: 0;"> Linode credeits </li>
+								<li style="color: white; padding: 0;"> Azure credits </li>
 							</ul>
 						</div>
 					</div>
 				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/tracks/beginner.png);">
 
-							<svg xmlns="http://www.w3.org/2000/svg" style="position:relative; margin:0;"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300"
-								viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.cls-r1 {
-											clip-path: url(#clip-custom_pr1);
-										}
-
-										.cls-r2 {
-											fill: url(#patternpr);
-										}
-
-										.cls-r3 {
-											fill: #fff;
-										}
-									</style>
-									<pattern id="patternpr" preserveAspectRatio="xMidYMid slice" width="100%"
-										height="100%" viewBox="0 0 1064 1128">
-										<image width="1064" height="1128" xlink:href="assets/img/tracks/2953.jpg" />
-									</pattern>
-									<clipPath id="clip-custom_pr1">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="custom_1" data-name="custom – 1" class="cls-r1">
-									<rect class="cls-r3" width="300" height="300" />
-									<rect id="_2952" data-name="2952" class="cls-r2" width="407" height="407"
-										transform="translate(-36 -45)" />
-								</g>
-							</svg>
-
-
-						</div>
+        <li class="booking-card">
+					<div class="card-prize" style="background-color:#1A1A1A;">
+						<div class="banner">
+              <img src="./img/prizes/first.JPEG" alt="">
+            </div>
 						<div class="menu">
 							<div class="opener"><span></span><span></span><span></span></div>
 						</div>
-						<h4 class="name">Best Beginners Hack</h4>
-
-						<div class="desc">The team which builds the best hack in the Beginners category wins :
-							<br><br>
-							<ul style="color: #000;">
-								<li style="color: #000; padding: 0;">INR 5000 cash prize</li>
-								<li style="color: #000; padding: 0;">Hack Off branded Merchandise</li>
-								<li style="color: #000; padding: 0;">Wolfram One Licenses</li>
-								
-								<li style="color: #000; padding: 0;">Cloudspoilt Credits</li>
-								<br>
+						<h4 class="name"> IOT & Robotics </h4>
+						<div class="desc">
+							<ul style="color: white;">
+								<li style="color: white; padding: 0;">INR 3000 cash prize</li>
+								<li style="color: white; padding: 0;">Amazon SDE test service from Geeks For Geeks</li>
+								<li style="color: white; padding: 0;"> Personalised dev kits </li>
+								<li style="color: white; padding: 0;"> Linode credeits </li>
+								<li style="color: white; padding: 0;"> Azure credits </li>
 							</ul>
 						</div>
-				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/brands/siemens_thumb.png);">
-
-							<svg xmlns="http://www.w3.org/2000/svg" style="position:relative; margin:0;"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300"
-								viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.cls-r1 {
-											clip-path: url(#clip-custom_pr1);
-										}
-
-										.cls-r2 {
-											fill: url(#patternpr);
-										}
-
-										.cls-r3 {
-											fill: #fff;
-										}
-									</style>
-									<pattern id="patternpr" preserveAspectRatio="xMidYMid slice" width="100%"
-										height="100%" viewBox="0 0 1064 1128">
-										<image width="1064" height="1128" xlink:href="assets/img/tracks/2953.jpg" />
-									</pattern>
-									<clipPath id="clip-custom_pr1">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="custom_1" data-name="custom – 1" class="cls-r1">
-									<rect class="cls-r3" width="300" height="300" />
-									<rect id="_2952" data-name="2952" class="cls-r2" width="407" height="407"
-										transform="translate(-36 -45)" />
-								</g>
-							</svg>
-
-
-						</div>
-						<div class="menu">
-							<div class="opener"><span></span><span></span><span></span></div>
-						</div>
-						<h4 class="name">Siemens Healthineers Challenge</h4>
-
-						<div class="desc">Siemens Healthineers is providing 3 problem statements accompanied with a
-							total
-							prize of 30000 INR,
-							10,000 INR for the best solution to each Problem Statements.<br> To view the statements
-							visit
-							the <a href="#challenges" style="color: #000000; font-weight: 500;">challenges</a> section.
-						</div>
-				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/brands/ge_healthcare.png);">
-
-							<svg xmlns="http://www.w3.org/2000/svg" style="position:relative; margin:0;"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300"
-								viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.cls-r1 {
-											clip-path: url(#clip-custom_pr1);
-										}
-
-										.cls-r2 {
-											fill: url(#patternpr);
-										}
-
-										.cls-r3 {
-											fill: #fff;
-										}
-									</style>
-									<pattern id="patternpr" preserveAspectRatio="xMidYMid slice" width="100%"
-										height="100%" viewBox="0 0 1064 1128">
-										<image width="1064" height="1128" xlink:href="assets/img/tracks/2953.jpg" />
-									</pattern>
-									<clipPath id="clip-custom_pr1">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="custom_1" data-name="custom – 1" class="cls-r1">
-									<rect class="cls-r3" width="300" height="300" />
-									<rect id="_2952" data-name="2952" class="cls-r2" width="407" height="407"
-										transform="translate(-36 -45)" />
-								</g>
-							</svg>
-
-
-						</div>
-						<div class="menu">
-							<div class="opener"><span></span><span></span><span></span></div>
-						</div>
-						<h4 class="name">GE Healthcare Challenge</h4>
-
-						<div class="desc">GE Healthcare shall provide <b
-								style="color: #000; font-weight: 600;">internship opportunities</b> to winners or
-							members of
-							teams showcasing solutions of potential interest to their Problem Statement. <br>To view the
-							problem statement visit
-							the <a href="#challenges" style="color: #000000; font-weight: 500;">challenges</a> section.
-						</div>
 					</div>
 				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/brands/confluent_thumb.png);">
 
-							<svg xmlns="http://www.w3.org/2000/svg" style="position:relative; margin:0;"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300"
-								viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.cls-r1 {
-											clip-path: url(#clip-custom_pr1);
-										}
-
-										.cls-r2 {
-											fill: url(#patternpr);
-										}
-
-										.cls-r3 {
-											fill: #fff;
-										}
-									</style>
-									<pattern id="patternpr" preserveAspectRatio="xMidYMid slice" width="100%"
-										height="100%" viewBox="0 0 1064 1128">
-										<image width="1064" height="1128" xlink:href="assets/img/tracks/2953.jpg" />
-									</pattern>
-									<clipPath id="clip-custom_pr1">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="custom_1" data-name="custom – 1" class="cls-r1">
-									<rect class="cls-r3" width="300" height="300" />
-									<rect id="_2952" data-name="2952" class="cls-r2" width="407" height="407"
-										transform="translate(-36 -45)" />
-								</g>
-							</svg>
-
-						</div>
+        <li class="booking-card">
+					<div class="card-prize" style="background-color:#1A1A1A;">
+						<div class="banner">
+              <img src="./img/prizes/first.JPEG" alt="">
+            </div>
 						<div class="menu">
 							<div class="opener"><span></span><span></span><span></span></div>
 						</div>
-						<h4 class="name">Confluent Challenge</h4>
-
-						<div class="desc" style="text-align: left;">
-
-							Confluent will be offering following prize for the 'Confluent Challenge':
-							<b style="color: #000; font-weight: 600;"><br>
-								1) $100 of free Confluent Cloud<br>
-								2) $100 Amazon gift card for each member of the winning team.<br>
-								3) 100% off Confluent Certification Program and On-Demand Courses.
-							</b>
+						<h4 class="name"> Women in tech </h4>
+						<div class="desc">
+							<ul style="color: white;">
+								<li style="color: white; padding: 0;">INR 100 USD cash prize</li>
+								<li style="color: white; padding: 0;">Amazon SDE test service from Geeks For Geeks</li>
+								<li style="color: white; padding: 0;"> Full Mentoring session on Entrepreneurship by Founder of doorie.io</li>
+								<li style="color: white; padding: 0;"> Linode credeits </li>
+								<li style="color: white; padding: 0;"> Azure credits </li>
+							</ul>
 						</div>
 					</div>
 				</li>
 
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/brands/echoar_thumb.png);">
-
-							<svg xmlns="http://www.w3.org/2000/svg" style="position:relative; margin:0;"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300"
-								viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.cls-r1 {
-											clip-path: url(#clip-custom_pr1);
-										}
-
-										.cls-r2 {
-											fill: url(#patternpr);
-										}
-
-										.cls-r3 {
-											fill: #fff;
-										}
-									</style>
-									<pattern id="patternpr" preserveAspectRatio="xMidYMid slice" width="100%"
-										height="100%" viewBox="0 0 1064 1128">
-										<image width="1064" height="1128" xlink:href="assets/img/tracks/2953.jpg" />
-									</pattern>
-									<clipPath id="clip-custom_pr1">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="custom_1" data-name="custom – 1" class="cls-r1">
-									<rect class="cls-r3" width="300" height="300" />
-									<rect id="_2952" data-name="2952" class="cls-r2" width="407" height="407"
-										transform="translate(-36 -45)" />
-								</g>
-							</svg>
-
-						</div>
+        <li class="booking-card">
+					<div class="card-prize" style="background-color:#1A1A1A;">
+						<div class="banner">
+              <img src="./img/prizes/first.JPEG" alt="">
+            </div>
 						<div class="menu">
 							<div class="opener"><span></span><span></span><span></span></div>
 						</div>
-						<h4 class="name">echoAR Challenge</h4>
-
-						<div class="desc" style="text-align: left;">
-
-							echoAR will be offering following prize for the 'echoAR Challenge':
-							<b style="color: #000; font-weight: 600;"><br>
-								1) $50 Amazon gift card<br>
-								2) 1 month free business tier access.<br>
-								3) A feature in echoAr newsletter (sent to investors and AR/VR ecosystem).
-							</b>
+						<h4 class="name"> Education </h4>
+						<div class="desc">
+							<ul style="color: white;">
+								<li style="color: white; padding: 0;">INR 3000 cash prize</li>
+								<li style="color: white; padding: 0;">Amazon SDE test service from Geeks For Geeks</li>
+								<li style="color: white; padding: 0;"> One complimentry paper book from Rosenfield </li>
+								<li style="color: white; padding: 0;"> Linode credeits </li>
+								<li style="color: white; padding: 0;"> Azure credits </li>
+							</ul>
 						</div>
 					</div>
 				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/brands/tezos_thumb.png);">
 
-							<svg xmlns="http://www.w3.org/2000/svg" style="position:relative; margin:0;"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300"
-								viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.cls-r1 {
-											clip-path: url(#clip-custom_pr1);
-										}
-
-										.cls-r2 {
-											fill: url(#patternpr);
-										}
-
-										.cls-r3 {
-											fill: #fff;
-										}
-									</style>
-									<pattern id="patternpr" preserveAspectRatio="xMidYMid slice" width="100%"
-										height="100%" viewBox="0 0 1064 1128">
-										<image width="1064" height="1128" xlink:href="assets/img/tracks/2953.jpg" />
-									</pattern>
-									<clipPath id="clip-custom_pr1">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="custom_1" data-name="custom – 1" class="cls-r1">
-									<rect class="cls-r3" width="300" height="300" />
-									<rect id="_2952" data-name="2952" class="cls-r2" width="407" height="407"
-										transform="translate(-36 -45)" />
-								</g>
-							</svg>
-
-
-						</div>
+        <li class="booking-card">
+					<div class="card-prize" style="background-color:#1A1A1A;">
+						<div class="banner">
+              <img src="./img/prizes/first.JPEG" alt="">
+            </div>
 						<div class="menu">
 							<div class="opener"><span></span><span></span><span></span></div>
 						</div>
-						<h4 class="name">Tezos Challenge</h4>
-						<div class="desc" style="text-align: left;">
-							Tezos will be offering following prize for the 'Tezos Challenge':
-							<b style="color: #000; font-weight: 600;"><br>
-								1) 10000 INR for best Dapp built on Tezos<br>
-								2) 5000 INR for Runners-up team<br>
-								3) Continuity Grant opportunity for exceptional builders
-							</b>
-						</div>
-				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/brands/outsystems_thumb.png);">
-
-							<svg xmlns="http://www.w3.org/2000/svg" style="position:relative; margin:0;"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300"
-								viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.cls-r1 {
-											clip-path: url(#clip-custom_pr1);
-										}
-
-										.cls-r2 {
-											fill: url(#patternpr);
-										}
-
-										.cls-r3 {
-											fill: #fff;
-										}
-									</style>
-									<pattern id="patternpr" preserveAspectRatio="xMidYMid slice" width="100%"
-										height="100%" viewBox="0 0 1064 1128">
-										<image width="1064" height="1128" xlink:href="assets/img/tracks/2953.jpg" />
-									</pattern>
-									<clipPath id="clip-custom_pr1">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="custom_1" data-name="custom – 1" class="cls-r1">
-									<rect class="cls-r3" width="300" height="300" />
-									<rect id="_2952" data-name="2952" class="cls-r2" width="407" height="407"
-										transform="translate(-36 -45)" />
-								</g>
-							</svg>
-
-
-						</div>
-						<div class="menu">
-							<div class="opener"><span></span><span></span><span></span></div>
-						</div>
-						<h4 class="name">Best OutSystems Hack</h4>
-
-						<div class="desc">OutSystems will be providing prizes for 'Best OutSystems Hack'. Each member of
-							the
-							winning team will be receiving the following:<br>
-							<b style="color: #000;font-weight: 600;">1) 100% Free Exam Voucher<br>
-								2) Special OutSystems SWAG Kit.</b><br> To view the challenge visit
-							the <a href="#challenges" style="color: #000000; font-weight: 500;">challenges</a> section.
+						<h4 class="name"> Open Innovation </h4>
+						<div class="desc">
+							<ul style="color: white;">
+								<li style="color: white; padding: 0;">INR 3000 cash prize</li>
+								<li style="color: white; padding: 0;">Amazon SDE test service from Geeks For Geeks</li>
+								<li style="color: white; padding: 0;"> One complimentry paper book from Rosenfield </li>
+								<li style="color: white; padding: 0;"> Linode credeits </li>
+								<li style="color: white; padding: 0;"> Azure credits </li>
+							</ul>
 						</div>
 					</div>
 				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/brands/portis_thumb.png);">
 
-							<svg xmlns="http://www.w3.org/2000/svg" style="position:relative; margin:0;"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300"
-								viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.cls-r1 {
-											clip-path: url(#clip-custom_pr1);
-										}
-
-										.cls-r2 {
-											fill: url(#patternpr);
-										}
-
-										.cls-r3 {
-											fill: #fff;
-										}
-									</style>
-									<pattern id="patternpr" preserveAspectRatio="xMidYMid slice" width="100%"
-										height="100%" viewBox="0 0 1064 1128">
-										<image width="1064" height="1128" xlink:href="assets/img/tracks/2953.jpg" />
-									</pattern>
-									<clipPath id="clip-custom_pr1">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="custom_1" data-name="custom – 1" class="cls-r1">
-									<rect class="cls-r3" width="300" height="300" />
-									<rect id="_2952" data-name="2952" class="cls-r2" width="407" height="407"
-										transform="translate(-36 -45)" />
-								</g>
-							</svg>
-
-
-						</div>
+        <li class="booking-card">
+					<div class="card-prize" style="background-color:#1A1A1A;">
+						<div class="banner">
+              <img src="./img/prizes/first.JPEG" alt="">
+            </div>
 						<div class="menu">
 							<div class="opener"><span></span><span></span><span></span></div>
 						</div>
-						<h4 class="name">Portis Challenge</h4>
-
-						<div class="desc">Portis will be giving away a prize of 200 USD (in crypto) for best Dapp built
-							on Portis.
-							Portis is a platform for making decentralized applications accessible to mainstream users.
-							<br> <br> To view the statement visit
-							the <a href="#challenges" style="color: #000000; font-weight: 500;">challenges</a> section.
-						</div>
-				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/brands/matic_thumb.png);">
-
-							<svg xmlns="http://www.w3.org/2000/svg" style="position:relative; margin:0;"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300"
-								viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.cls-r1 {
-											clip-path: url(#clip-custom_pr1);
-										}
-
-										.cls-r2 {
-											fill: url(#patternpr);
-										}
-
-										.cls-r3 {
-											fill: #fff;
-										}
-									</style>
-									<pattern id="patternpr" preserveAspectRatio="xMidYMid slice" width="100%"
-										height="100%" viewBox="0 0 1064 1128">
-										<image width="1064" height="1128" xlink:href="assets/img/tracks/2953.jpg" />
-									</pattern>
-									<clipPath id="clip-custom_pr1">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="custom_1" data-name="custom – 1" class="cls-r1">
-									<rect class="cls-r3" width="300" height="300" />
-									<rect id="_2952" data-name="2952" class="cls-r2" width="407" height="407"
-										transform="translate(-36 -45)" />
-								</g>
-							</svg>
-
-						</div>
-						<div class="menu">
-							<div class="opener"><span></span><span></span><span></span></div>
-						</div>
-						<h4 class="name">Matic Challenge</h4>
-
-						<div class="desc" style="text-align: left;">
-							Matic will be giving away a cash prize for the best hack built on top of Ethereum
-							(Rs.10000). For teams that integrate Matic in their hacks will get higher prize money
-							(Rs.15000) along with eligibility for internship/full-time role interviews
-							and a chance to land seed funding of 5000 USD!
+						<h4 class="name"> Blockchain </h4>
+						<div class="desc">
+							<ul style="color: white;">
+								<li style="color: white; padding: 0;">INR 3000 cash prize</li>
+								<li style="color: white; padding: 0;">Amazon SDE test service from Geeks For Geeks</li>
+								<li style="color: white; padding: 0;"> One complimentry paper book from Rosenfield </li>
+								<li style="color: white; padding: 0;"> Linode credeits </li>
+								<li style="color: white; padding: 0;"> Azure credits </li>
+								<li style="color: white; padding: 0;"> 5 registrations for Blockchain Developer Program on demand and accompanying certificate</li>
+							</ul>
 						</div>
 					</div>
 				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/tracks/hardware.png);">
 
-							<svg style="position:relative; margin:0;" xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300"
-								viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.cls-p1 {
-											clip-path: url(#clip-custom_p1);
-										}
-
-										.cls-p2 {
-											fill: #fff;
-										}
-									</style>
-									<clipPath id="clip-custom_p1">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="custom_1" data-name="custom – 1" class="cls-p1">
-									<rect class="cls-p2" width="300" height="300" />
-									<image id="_2952" data-name="2952" width="407" height="407"
-										transform="translate(-53 -66)" xlink:href="assets/img/tracks/2952.jpg" />
-								</g>
-							</svg>
-
-						</div>
+        <li class="booking-card">
+					<div class="card-prize" style="background-color:#1A1A1A;">
+						<div class="banner">
+              <img src="./img/prizes/first.JPEG" alt="">
+            </div>
 						<div class="menu">
 							<div class="opener"><span></span><span></span><span></span></div>
 						</div>
-						<h4 class="name">Best Hardware Hack Sponsored by Digi-Key</h4>
-
-						<div class="desc">Using your preferred hardware or hardware emulator, build a hack for your
-							chance to win a Grove Beginner Kit, with Arduino Uno R3 included. Each winning team member
-							of the two winning teams will receive a prize!</div>
+						<h4 class="name"> Best Idea </h4>
+						<div class="desc">
+							<ul style="color: white;">
+								<li style="color: white; padding: 0;">INR 3000 cash prize</li>
+								<li style="color: white; padding: 0;">15 USD coupons from Go Bilda</li>
+								<li style="color: white; padding: 0;"> Linode credeits </li>
+								<li style="color: white; padding: 0;"> Azure credits </li>
+								<li style="color: white; padding: 0;"> 3 months Hacker plan from Repl.it </li>
+							</ul>
+						</div>
 					</div>
 				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/tracks/domain.png);">
 
-							<svg style="position:relative; margin:0;" xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300"
-								viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.cls-p1 {
-											clip-path: url(#clip-custom_p1);
-										}
-
-										.cls-p2 {
-											fill: #fff;
-										}
-									</style>
-									<clipPath id="clip-custom_p1">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="custom_1" data-name="custom – 1" class="cls-p1">
-									<rect class="cls-p2" width="300" height="300" />
-									<image id="_2952" data-name="2952" width="407" height="407"
-										transform="translate(-53 -66)" xlink:href="assets/img/tracks/2952.jpg" />
-								</g>
-							</svg>
-
-						</div>
+        <li class="booking-card">
+					<div class="card-prize" style="background-color:#1A1A1A;">
+						<div class="banner">
+              <img src="./img/prizes/first.JPEG" alt="">
+            </div>
 						<div class="menu">
 							<div class="opener"><span></span><span></span><span></span></div>
 						</div>
-						<h4 class="name">Best Domain Name from GoDaddy Registry</h4>
-
-						<div class="desc">Register your domain name with GoDaddy Registry for a chance to win a
-							Hack from Home Kit! Each Kit contains wireless earbuds, blue light glasses, selfie ring
-							light and a pouch for easy transport.</div>
+						<h4 class="name"> Best UI/UX </h4>
+						<div class="desc">
+							<ul style="color: white;">
+								<li style="color: white; padding: 0;">INR 3000 cash prize</li>
+								<li style="color: white; padding: 0;">1password family membership</li>
+								<li style="color: white; padding: 0;">1 year Framer subscriptions</li>
+								<li style="color: white; padding: 0;"> Linode credeits </li>
+								<li style="color: white; padding: 0;"> Azure credits </li>
+								<li style="color: white; padding: 0;"> 3 months Hacker plan from Repl.it </li>
+							</ul>
+						</div>
 					</div>
 				</li>
-				<li class="booking-card">
-					<div class="card-prize">
-						<div class="banner" style="background-image: url(assets/img/tracks/datastax.png);">
-
-							<svg style="position:relative; margin:0;" xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300"
-								viewBox="0 0 300 300">
-								<defs>
-									<style>
-										.cls-p1 {
-											clip-path: url(#clip-custom_p1);
-										}
-
-										.cls-p2 {
-											fill: #fff;
-										}
-									</style>
-									<clipPath id="clip-custom_p1">
-										<rect width="300" height="300" />
-									</clipPath>
-								</defs>
-								<g id="custom_1" data-name="custom – 1" class="cls-p1">
-									<rect class="cls-p2" width="300" height="300" />
-									<image id="_2952" data-name="2952" width="407" height="407"
-										transform="translate(-53 -66)" xlink:href="assets/img/tracks/2952.jpg" />
-								</g>
-							</svg>
-
-						</div>
-						<div class="menu">
-							<div class="opener"><span></span><span></span><span></span></div>
-						</div>
-						<h4 class="name">Best use of <br> DataStax Astra</h4>
-
-						<div class="desc">Build a hack using DataStax Astra’s Cassandra-made-easy service and gain
-							in-demand skills along with a chance to win Blue Snowball Microphones for each team member.
-							It’s easy to signup with 5GB free, no credit card needed.</div>
-					</div>
-				</li>
-			</div>
+        </div>
+      </div>
+    </div>
+			
 		</div>
 	</section>
   </div>
