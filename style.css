@@ -421,7 +421,7 @@ li {
 
 p {
 	line-height: 1.8;
-	color: #fff;
+	/* color: #fff; */
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -4731,6 +4731,7 @@ modal styles */
 
 /* Some left and right padding inside the container */
 .container {
+	/* height: 720px; */
 	padding: 0 16px;
 }
 
@@ -4977,7 +4978,9 @@ h1 {
 	position: relative;
 	padding: 0;
 }
-
+#moreT{
+	display: none;
+}
 .col-partner {
 	padding: 0 5rem;
 	margin-top: 5rem;
